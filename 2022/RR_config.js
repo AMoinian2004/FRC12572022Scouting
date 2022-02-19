@@ -37,13 +37,17 @@ var config_data = `
         "max":100,
         "required":"true"
       },
-        "required":"true"
-      },
       "Team #": {
         "code":"t",
         "type":"team",
         "min":1,
         "max":99999
+      },
+      "Auto Start Position": {
+        "code":"as",
+        "title": "Auto Start Position",
+        "type":"field_image",
+        "filename":"2022/field_image.png"
       }
     },
     "auton": {
