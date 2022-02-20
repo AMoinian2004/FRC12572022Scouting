@@ -68,6 +68,11 @@ var config_data = `
         "code":"al",
         "title": "Lower Cargo Scored",
         "type":"counter"
+      },
+      "Human Shots": {
+        "code":"hs",
+        "title": "Lower Cargo Scored",
+        "type":"counter"
       }
     },
     "teleop": {
@@ -78,6 +83,16 @@ var config_data = `
       },
       "Lower Cargo Scored": {
         "code":"tl",
+        "title": "Lower Cargo Scored",
+        "type":"counter"
+      },
+        "Upper Cargo Dropped": {
+        "code":"du",
+        "title": "Uppoer Cargo Scored",
+        "type":"counter"
+      },
+      "Lower Cargo Dropped": {
+        "code":"dl",
         "title": "Lower Cargo Scored",
         "type":"counter"
       }
@@ -109,81 +124,16 @@ var config_data = `
           "x":"Successful/Not Attempted"
         },
         "defaultValue":"x"
-      },
-      "Started Climb before Endgame": {
-        "code":"be",
-        "title": "Started climb before EndGame",
-        "type":"bool"
-      },
-      "Num of Robots Climbed": {
-        "code":"cn",
-        "title": "# of alliance bots climbed",
-        "type":"counter"
       }
     },
     "postmatch": {
-      "Driver Skill": {
-        "code":"ds",
-        "title": "Driver Skill",
-        "type":"radio",
-        "choices":{
-          "n":"Not Effective<br>",
-          "a":"Average<br>",
-          "v":"Very Effective<br>",
-          "x":"Not Observed"
-        },
-        "defaultValue":"x"
-      },
-      "Defense Rating": {
-        "code":"dr",
-        "title": "Defense Rating",
-        "type":"radio",
-        "choices":{
-          "n":"Not Effective<br>",
-          "a":"Average<br>",
-          "v":"Very Effective<br>",
-          "x":"Not Observed"
-        },
-        "defaultValue":"x"
-      },
-      "Shot enemy balls away?": {
-        "code":"ba",
-        "title": "Shot enemy balls away?",
-        "type":"bool"
-      },
-      "Died/Tipped": {
-        "code":"d",
-        "title": "Died/Tipped",
-        "type":"bool"
-      },
-      "Card Foul": {
-        "code":"cf",
-        "title": "Yellow/Red Card",
-        "type":"bool"
-      },
-      "Make good alliance partner?": {
-        "code":"all",
-        "title": "Make good alliance partner?",
-        "type":"bool"
-      },
-      "Comments": {
+      "Notes": {
         "code":"co",
         "title": "Comments",
         "type":"text",
         "size":15,
         "maxSize":50
-      },
-      "Confidence Rating": {
-        "code":"cnf",
-        "title": "Confidence Rating",
-        "type":"radio",
-        "choices":{
-          "v":"Very Confident<br>",
-          "a":"Average<br>",
-          "n":"Not Confident"
-      },
-       "defaultValue":"a"
-    }
+      }
     }
   }
 }`;
