@@ -399,18 +399,9 @@ function getRobot(){
 }
 
 function validateRobot() {
-	if (document.getElementById("input_r_r1").checked ||
-		document.getElementById("input_r_r2").checked ||
-		document.getElementById("input_r_r3").checked ||
-		document.getElementById("input_r_b1").checked ||
-		document.getElementById("input_r_b2").checked ||
-		document.getElementById("input_r_b3").checked
-	) {
+	
 		return true
-	} else {
-
-		return false
-	}
+	
 }
 
 function resetRobot() {
