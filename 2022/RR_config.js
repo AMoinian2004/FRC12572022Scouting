@@ -42,7 +42,7 @@ var config_data = `
         "type":"robot",
         "choices":{
           "r1":"Red",
-          "b1":"Blue",
+          "b1":"Blue"
         },
         "required":"true"
       },
