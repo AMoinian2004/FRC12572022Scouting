@@ -54,14 +54,14 @@ var config_data = `
       }
     },
     "auton": {
-      "Cross?": {
+      "Taxi": {
         "code":"at",
-        "title": "Taxied?",
+        "title": "Cross?",
         "type":"bool"
       },
       "Upper Cargo Scored": {
         "code":"au",
-        "title": "Uppoer Cargo Scored",
+        "title": "Upper Cargo Scored",
         "type":"counter"
       },
       "Lower Cargo Scored": {
