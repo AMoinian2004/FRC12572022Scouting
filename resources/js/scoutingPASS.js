@@ -398,11 +398,7 @@ function getRobot(){
 	}
 }
 
-function validateRobot() {
-	
-		return true
-	
-}
+
 
 function resetRobot() {
 	if (document.getElementById("input_r_r1").checked) {
@@ -460,12 +456,7 @@ function validateData() {
 	var errStr = "Bad fields: ";
 	for (rf of requiredFields) {
 		// Robot requires special (radio) validation
-		if (rf == "r") {
-			if (!validateRobot()) {
-				errStr += rf + " "
-				ret = false
-			}
-		} else if (rf == "l") {
+		 if (rf == "l") {
 			if (!validateLevel()) {
 				errStr += rf + " "
 				ret = false
