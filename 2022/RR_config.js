@@ -54,7 +54,7 @@ var config_data = `
       }
     },
     "auton": {
-      "Taxi": {
+      "Cross": {
         "code":"at",
         "title": "Taxied?",
         "type":"bool"
@@ -80,29 +80,6 @@ var config_data = `
         "code":"tl",
         "title": "Lower Cargo Scored",
         "type":"counter"
-      },
-      "Was Defended": {
-        "code":"wd",
-        "title": "Was Defended",
-        "type":"bool"
-      },
-      "Cargo Intake From": {
-        "code":"cif",
-        "title": "Cargo Intake From",
-        "type":"radio",
-        "choices":{
-          "t":"Terminal<br>",
-          "g":"Ground<br>",
-          "b":"Both<br>",
-          "x":"Not Attempted"
-        },
-        "defaultValue":"x"
-      },
-      "Shooting Spot": {
-        "code":"ss",
-        "title": "Shooting Spot",
-        "type":"field_image",
-        "filename":"2022/field_image.png"
       }
     },
     "endgame": {
