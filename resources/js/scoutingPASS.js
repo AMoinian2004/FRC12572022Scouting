@@ -383,16 +383,8 @@ function configure(){
 function getRobot(){
 	if (document.getElementById("input_r_r1").checked){
 		return "r1";
-	} else if(document.getElementById("input_r_r2").checked){
-		return "r2";
-	} else if(document.getElementById("input_r_r3").checked){
-		return "r3";
 	} else if(document.getElementById("input_r_b1").checked){
 		return "b1";
-	} else if(document.getElementById("input_r_b2").checked){
-		return "b2";
-	} else if(document.getElementById("input_r_b3").checked){
-		return "b3";
 	}	else {
 		return "";
 	}
@@ -400,11 +392,9 @@ function getRobot(){
 
 function validateRobot() {
 	if (document.getElementById("input_r_r1").checked ||
-		document.getElementById("input_r_r2").checked ||
-		document.getElementById("input_r_r3").checked ||
+		
 		document.getElementById("input_r_b1").checked ||
-		document.getElementById("input_r_b2").checked ||
-		document.getElementById("input_r_b3").checked
+		
 	) {
 		return true
 	} else {
@@ -417,21 +407,11 @@ function resetRobot() {
 	if (document.getElementById("input_r_r1").checked) {
 		document.getElementById("input_r_r1").checked = false
 	}
-	if (document.getElementById("input_r_r2").checked) {
-		document.getElementById("input_r_r2").checked = false
-	}
-	if (document.getElementById("input_r_r3").checked) {
-		document.getElementById("input_r_r3").checked = false
-	}
+	
 	if (document.getElementById("input_r_b1").checked) {
 		document.getElementById("input_r_b1").checked = false
 	}
-	if (document.getElementById("input_r_b2").checked) {
-		document.getElementById("input_r_b2").checked = false
-	}
-	if (document.getElementById("input_r_b3").checked) {
-		document.getElementById("input_r_b3").checked = false
-	}
+	
 }
 
 
