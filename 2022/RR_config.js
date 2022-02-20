@@ -41,9 +41,9 @@ var config_data = `
         "code":"r",
         "type":"robot",
         "choices":{
-          "r1":"Left Red",
+          "r1":"Left Red  ",
           "b1":"Left Blue<br>",
-          "r2":"Center Red",
+          "r2":"Center Red ",
           "b2":"Center Blue<br>",
           "r3":"Right Red",
           "b3":"Right Blue"
