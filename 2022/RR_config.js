@@ -54,7 +54,7 @@ var config_data = `
       }
     },
     "auton": {
-      "Taxi": {
+      "Cross?": {
         "code":"at",
         "title": "Taxied?",
         "type":"bool"
@@ -68,11 +68,6 @@ var config_data = `
         "code":"al",
         "title": "Lower Cargo Scored",
         "type":"counter"
-      },
-      "Auto Aquired Cargo": {
-        "code":"ac",
-        "title": "Picked up more cargo?",
-        "type":"bool"
       }
     },
     "teleop": {
