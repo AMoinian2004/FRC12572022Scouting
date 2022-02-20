@@ -17,7 +17,7 @@ Public Function getInput()
 End Function
 
 Sub testSaveData()
-    saveData ("s=fff;e=1234;l=qm;m=1234;r=r1;t=1234;as=;ae=Y;al=2;ao=2;ai=1;aa=Y;at=N;ax=Y;lp=2;op=1;ip=3;rc=pass;f=0;pc=pass;ss=;c=pass;b=N;ca=x;cb=x;cs=slow;p=N;ds=x;dr=x;pl=x;tr=N;wd=N;if=N;d=N;to=N;be=N;cf=N")
+    saveData ("s=fff;e=1234;l=qm;m=1234;r=r1;t=1234;as=;ae=Y;al=2;ao=2;ai=1;aa=Y;at=N;ax=Y;lp=2;op=1;ip=3;rc=pass;f=0;pc=pass;ss=;c=pass;b=N;ca=x;cb=x;cs=slow;p=N;ds=x;dr=x;pl=x;tr=N;wd=N;if=N;d=N;to=N;be=N;co=N")
 End Sub
 
 Public Function ArrayLen(arr As Variant) As Integer
@@ -55,7 +55,7 @@ Sub saveData(inp As String)
     'mapper.Add "d", "died"
     'mapper.Add "to", "tippedOver"
     'mapper.Add "cf", "cardFouls"
-    'mapper.Add "co", "comments"
+    mapper.Add "co", "comments"
     
     If inp = "" Then
         Exit Sub
