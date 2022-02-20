@@ -103,7 +103,7 @@ html, body{
 }
 
 h1{
-    font-family: Alexis;
+    font-family: Arial Narrow;
     text-align: center;
     border-style: groove;
     border-color: white; 
@@ -118,7 +118,7 @@ h1{
 }
 
 h2{
-    font-family: Alexis;
+    font-family: Arial Narrow;
     text-align: center;
     font-size: 30px;
     font-weight: 300;
