@@ -1,7 +1,7 @@
 var config_data = `
 {
-  "title":"Scouting PASS 2022",
-  "page_title":"Rapid React",
+  "title":"FRC 1257 Scouting App 2022",
+  "page_title":"FRC 1257 Rapid React Scouting App",
   "elements":{
     "prematch": {
       "Scouter Initials": {
