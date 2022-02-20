@@ -56,12 +56,12 @@ var config_data = `
     "auton": {
       "Taxi": {
         "code":"at",
-        "title": "Cross?",
+        "title": "Taxied?",
         "type":"bool"
       },
       "Upper Cargo Scored": {
         "code":"au",
-        "title": "Upper Cargo Scored",
+        "title": "Uppoer Cargo Scored",
         "type":"counter"
       },
       "Lower Cargo Scored": {
