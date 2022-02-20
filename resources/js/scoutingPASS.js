@@ -532,7 +532,7 @@ function getData() {
 }
 
 function updateQRHeader() {
-	var str = 'Event: !EVENT! Match: !MATCH! Robot: !ROBOT! Team: !TEAM!';
+	var str = 'Event: !EVENT! Match: !MATCH! Tablet: !ROBOT! Team: !TEAM!';
 
 	str = str
 		.replace('!EVENT!', document.getElementById("input_e").value)
