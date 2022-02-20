@@ -41,7 +41,7 @@ var config_data = `
         "code":"r",
         "type":"robot",
         "choices":{
-          "r1":"Red",
+          "r1":"Red<br>",
           "b1":"Blue"
         },
         "required":"true"
