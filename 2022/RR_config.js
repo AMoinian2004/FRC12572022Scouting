@@ -37,16 +37,12 @@ var config_data = `
         "max":100,
         "required":"true"
       },
-       "Robot": {
+     "Alliance": {
         "code":"r",
         "type":"robot",
         "choices":{
-          "r1":"Left Red  ",
-          "b1":"Left Blue<br>",
-          "r2":"Center Red ",
-          "b2":"Center Blue<br>",
-          "r3":"Right Red",
-          "b3":"Right Blue"
+          "r1":"Red",
+          "b1":"Blue",
         },
         "required":"true"
       },
@@ -55,8 +51,8 @@ var config_data = `
         "type":"team",
         "min":1,
         "max":99999
-        }
-       },
+      }
+    },
     "auton": {
       "Taxi": {
         "code":"at",
