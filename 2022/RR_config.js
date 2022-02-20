@@ -38,7 +38,7 @@ var config_data = `
         "max":100,
         "required":"true"
       },
-     "Alliance": {
+     "Tablet": {
         "code":"r",
         "type":"robot",
          "choices":{
