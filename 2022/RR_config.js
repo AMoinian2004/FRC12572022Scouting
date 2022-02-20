@@ -21,8 +21,9 @@ var config_data = `
       "Match Level":{
         "code":"l",
         "type":"level",
-        "choices":{
+       "choices":{
           "qm":"Quals<br>",
+          "ef":"Eighth-Final<br>",
           "qf":"Quarter-Final<br>",
           "sf":"Semi-Final<br>",
           "f":"Final"
