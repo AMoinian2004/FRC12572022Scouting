@@ -42,12 +42,12 @@ var config_data = `
         "code":"r",
         "type":"robot",
          "choices":{
-          "r1":"Tablet 1",
-          "b1":"Tablet 4<br>",
-          "r2":"Tablet 2",
-          "b2":"Tablet 5<br>",
-          "r3":"Tablet 3",
-          "b3":"Tablet 6"
+          "r1":"Tablet A",
+          "b1":"Tablet B<br>",
+          "r2":"Tablet C",
+          "b2":"Tablet D<br>",
+          "r3":"Tablet E",
+          "b3":"Tablet F"
         },
         "required":"true"
       },
