@@ -59,7 +59,7 @@ var config_data = `
       }
     },
     "auton": {
-      "Cross": {
+      "Cross (left red/blue taped area)": {
         "code":"at",
         "title": "Taxied?",
         "type":"bool"
@@ -117,16 +117,13 @@ var config_data = `
         },
         "defaultValue":"x"
       },
-      "Last successful rung": {
+      "Tried to climb": {
         "code":"lsr",
         "title": "last succcessful rung",
         "type":"radio",
         "choices":{
-          "1":"Low<br>",
-          "2":"Mid<br>",
-          "3":"High<br>",
-          "4":"Traversal<br>",
-          "x":"Successful/Not Attempted"
+          "1":"Yes<br>",
+          "2":"No"
         },
         "defaultValue":"x"
       }
