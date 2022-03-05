@@ -129,7 +129,7 @@ var config_data = `
       }
     },
     "postmatch": {
-      "Notes": {
+      "Notes (Leave blank if you have nothing else to mention)": {
         "code":"co",
         "title": "Comments",
         "type":"text",
