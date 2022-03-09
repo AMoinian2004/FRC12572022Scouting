@@ -128,7 +128,7 @@ var config_data = `
           "4":"High Tried<br>",
           "5":"Transversal Tried"
         },
-        "defaultValue":"x"
+        "defaultValue":"1"
       }
     },
     "postmatch": {
