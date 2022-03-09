@@ -122,13 +122,13 @@ var config_data = `
         "title": "last succcessful rung",
         "type":"radio",
         "choices":{
-          "1":"Not Attempted/Successfully Climbed<br>",
-          "2":"Low Tried<br>",
-          "3":"Mid Tried<br>",
-          "4":"High Tried<br>",
-          "5":"Transversal Tried"
+          "x":"Not Attempted/Successfully Climbed<br>",
+          "1":"Low Tried<br>",
+          "2":"Mid Tried<br>",
+          "3":"High Tried<br>",
+          "4":"Transversal Tried"
         },
-        "defaultValue":"1"
+        "defaultValue":"x"
       }
     },
     "postmatch": {
