@@ -122,8 +122,11 @@ var config_data = `
         "title": "last succcessful rung",
         "type":"radio",
         "choices":{
-          "1":"Yes<br>",
-          "2":"No"
+          "1":"Not Attempted/Successfully Climbed<br>",
+          "2":"Low Tried<br>",
+          "3":"Mid Tried<br>",
+          "4":"High Tried<br>",
+          "5":"Transversal Tried"
         },
         "defaultValue":"x"
       }
