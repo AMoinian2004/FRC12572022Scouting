@@ -135,6 +135,7 @@ var config_data = `
       "Notes (Leave blank if you have nothing else to mention)": {
         "code":"co",
         "title": "Comments",
+        "class": "notes",
         "type":"text",
         "size":15,
         "maxSize":200
