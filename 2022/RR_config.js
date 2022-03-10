@@ -135,9 +135,9 @@ var config_data = `
       "Notes (Leave blank if you have nothing else to mention)": {
         "code":"co",
         "title": "Comments",
-        "class": "notes",
+        "style": "height:100px;",
         "type":"text",
-        "size":15,
+        "size":30,
         "maxSize":200
       }
     }
