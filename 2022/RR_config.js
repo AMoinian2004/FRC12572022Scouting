@@ -123,10 +123,10 @@ var config_data = `
         "type":"radio",
         "choices":{
           "x":"Not Attempted/Successfully Climbed<br>",
-          "1":"Low Tried<br>",
-          "2":"Mid Tried<br>",
-          "3":"High Tried<br>",
-          "4":"Transversal Tried"
+          "3":"Low Tried<br>",
+          "4":"Mid Tried<br>",
+          "5":"High Tried<br>",
+          "6":"Transversal Tried"
         },
         "defaultValue":"x"
       }
