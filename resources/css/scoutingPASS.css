@@ -96,6 +96,7 @@ html, body{
 }
 
 #postmatch{
+    rows: 5;
 }
 
 #qr-code{
@@ -231,7 +232,4 @@ input {
     background-color: white;
 }
 
-.notes {
-     height:200px;
-    font-size:12pt;
-}
+
