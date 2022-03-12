@@ -38,7 +38,7 @@ var config_data = `
         "max":100,
         "required":"true"
       },
-     "Tablet": {
+     "Tablet (Check back of tablet)": {
         "code":"r",
         "type":"robot",
          "choices":{
@@ -51,7 +51,7 @@ var config_data = `
         },
         "required":"true"
       },
-      "Team #": {
+      "Team # (For the team you are scouting)": {
         "code":"t",
         "type":"team",
         "min":1,
@@ -59,7 +59,7 @@ var config_data = `
       }
     },
     "auton": {
-      "Cross (left red/blue taped area)": {
+      "Cross (Yes = robot left red/blue taped area)": {
         "code":"at",
         "title": "Taxied?",
         "type":"bool"
@@ -91,12 +91,12 @@ var config_data = `
         "title": "Lower Cargo Scored",
         "type":"counter"
       },
-        "Upper Cargo Dropped": {
+        "Upper Cargo Dropped (How much cargo bounced out of high hub)": {
         "code":"du",
         "title": "Uppoer Cargo Scored",
         "type":"counter"
       },
-      "Lower Cargo Dropped": {
+      "Lower Cargo Dropped (How much cargo bounced out of low hub)": {
         "code":"dl",
         "title": "Lower Cargo Scored",
         "type":"counter"
@@ -117,7 +117,7 @@ var config_data = `
         },
         "defaultValue":"x"
       },
-      "Tried to climb": {
+      "Tried to Climb (If they failed to climb, what was the last rung they reached before falling)": {
         "code":"lsr",
         "title": "last succcessful rung",
         "type":"radio",
@@ -132,7 +132,7 @@ var config_data = `
       }
     },
     "postmatch": {
-      "Notes (Leave blank if you have nothing else to mention)": {
+      "Notes (Did they play defense? Did they not move/work?)": {
         "code":"co",
         "title": "Comments",
         "type":"text",
