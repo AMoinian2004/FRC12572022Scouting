@@ -137,7 +137,8 @@ var config_data = `
         "title": "Comments",
         "type":"text",
         "size":30,
-        "maxSize":200
+        "maxSize":200,
+        "height":300
       }
     }
   }
