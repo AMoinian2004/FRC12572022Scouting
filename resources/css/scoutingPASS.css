@@ -96,7 +96,7 @@ html, body{
 }
 
 #postmatch{
-    rows: 5;
+    height: 300px;
 }
 
 #qr-code{
