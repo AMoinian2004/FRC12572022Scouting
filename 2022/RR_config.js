@@ -91,12 +91,12 @@ var config_data = `
         "title": "Lower Cargo Scored",
         "type":"counter"
       },
-        "Upper Cargo Dropped (How much cargo bounced out of high hub)": {
+        "Upper Cargo Dropped (Cargo bounced out of high hub)": {
         "code":"du",
         "title": "Uppoer Cargo Scored",
         "type":"counter"
       },
-      "Lower Cargo Dropped (How much cargo bounced out of low hub)": {
+      "Lower Cargo Dropped (Cargo bounced out of low hub)": {
         "code":"dl",
         "title": "Lower Cargo Scored",
         "type":"counter"
