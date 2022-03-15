@@ -380,59 +380,7 @@ function configure(){
   });
 }
 
-function getRobot(){
-	if (document.getElementById("input_r_r1").checked){
-		return "r1";
-	} else if(document.getElementById("input_r_r2").checked){
-		return "r2";
-	} else if(document.getElementById("input_r_r3").checked){
-		return "r3";
-	} else if(document.getElementById("input_r_b1").checked){
-		return "b1";
-	} else if(document.getElementById("input_r_b2").checked){
-		return "b2";
-	} else if(document.getElementById("input_r_b3").checked){
-		return "b3";
-	}	else {
-		return "";
-	}
-}
 
-function validateRobot() {
-	if (document.getElementById("input_r_r1").checked ||
-		document.getElementById("input_r_r2").checked ||
-		document.getElementById("input_r_r3").checked ||
-		document.getElementById("input_r_b1").checked ||
-		document.getElementById("input_r_b2").checked ||
-		document.getElementById("input_r_b3").checked
-	) {
-		return true
-	} else {
-
-		return false
-	}
-}
-
-function resetRobot() {
-	if (document.getElementById("input_r_r1").checked) {
-		document.getElementById("input_r_r1").checked = false
-	}
-	if (document.getElementById("input_r_r2").checked) {
-		document.getElementById("input_r_r2").checked = false
-	}
-	if (document.getElementById("input_r_r3").checked) {
-		document.getElementById("input_r_r3").checked = false
-	}
-	if (document.getElementById("input_r_b1").checked) {
-		document.getElementById("input_r_b1").checked = false
-	}
-	if (document.getElementById("input_r_b2").checked) {
-		document.getElementById("input_r_b2").checked = false
-	}
-	if (document.getElementById("input_r_b3").checked) {
-		document.getElementById("input_r_b3").checked = false
-	}
-}
 
 
 function getLevel(){
@@ -465,24 +413,7 @@ function validateLevel() {
 function validateData() {
 	var ret = true
 	var errStr = "Bad fields: ";
-	for (rf of requiredFields) {
-		// Robot requires special (radio) validation
-		if (rf == "r") {
-			if (!validateRobot()) {
-				errStr += rf + " "
-				ret = false
-			}
-		} else if (rf == "l") {
-			if (!validateLevel()) {
-				errStr += rf + " "
-				ret = false
-			}
-		// Normal validation (length <> 0)
-		} else if (document.getElementById("input_"+rf).value.length == 0) {
-			errStr += rf + " "
-			ret = false
-		}
-	}
+	
 	if (ret == false) {
 		alert("Enter all required values\n"+errStr);
 	}
@@ -535,7 +466,6 @@ function updateQRHeader() {
 	str = str
 		.replace('!EVENT!', document.getElementById("input_e").value)
 		.replace('!MATCH!', document.getElementById("input_m").value)
-		.replace('!ROBOT!', document.getElementById("display_r").value)
 		.replace('!TEAM!', document.getElementById("input_t").value);
 
 	document.getElementById("display_qr-info").textContent = str;
