@@ -8,7 +8,7 @@ var slide = 0;
 
 // Options
 var options = {
-	text: "t=9998;m=99;l=q;s=rjs;d=0;to=0;ds=5;if=0;f=15;cf=0;in=1;alp=5;aop=5;aip=5;apu=5;atr=1;atro=0;lp=20;op=10;ip=10;rc=0;pc=0;ss=[(111,111),(111,111),(111,111),(111,111),(111,111),(111,111),(111,111)];c=1;hbc=0;ac=1;hc=0;cb=0;cs=3;nh=0;p=0;b=0;tr=1;ct=3;dr=3;comm='good shooter; shot from all over the field'",
+	text: "t=9998;m=99;l=q;r=b1;s=rjs;d=0;to=0;ds=5;if=0;f=15;cf=0;in=1;alp=5;aop=5;aip=5;apu=5;atr=1;atro=0;lp=20;op=10;ip=10;rc=0;pc=0;ss=[(111,111),(111,111),(111,111),(111,111),(111,111),(111,111),(111,111)];c=1;hbc=0;ac=1;hc=0;cb=0;cs=3;nh=0;p=0;b=0;tr=1;ct=3;dr=3;comm='good shooter; shot from all over the field'",
 	correctLevel: QRCode.CorrectLevel.L,
     quietZone: 15,
     quietZoneColor: '#FFFFFF'
@@ -16,7 +16,7 @@ var options = {
 
 // Must be filled in: e=event, m=match#, l=level(q,qf,sf,f), t=team#, r=robot(r1,r2,b1..), s=scouter
 //var requiredFields = ["e", "m", "l", "t", "r", "s", "as"];
-var requiredFields = ["e", "m", "l", "s"];
+var requiredFields = ["e", "m", "l", "r", "s"];
 
 function addCounter(table, idx, name, data){
   var row = table.insertRow(idx);
@@ -380,7 +380,59 @@ function configure(){
   });
 }
 
+function getRobot(){
+	if (document.getElementById("input_r_r1").checked){
+		return "r1";
+	} else if(document.getElementById("input_r_r2").checked){
+		return "r2";
+	} else if(document.getElementById("input_r_r3").checked){
+		return "r3";
+	} else if(document.getElementById("input_r_b1").checked){
+		return "b1";
+	} else if(document.getElementById("input_r_b2").checked){
+		return "b2";
+	} else if(document.getElementById("input_r_b3").checked){
+		return "b3";
+	}	else {
+		return "";
+	}
+}
 
+function validateRobot() {
+	if (document.getElementById("input_r_r1").checked ||
+		document.getElementById("input_r_r2").checked ||
+		document.getElementById("input_r_r3").checked ||
+		document.getElementById("input_r_b1").checked ||
+		document.getElementById("input_r_b2").checked ||
+		document.getElementById("input_r_b3").checked
+	) {
+		return true
+	} else {
+
+		return false
+	}
+}
+
+function resetRobot() {
+	if (document.getElementById("input_r_r1").checked) {
+		document.getElementById("input_r_r1").checked = false
+	}
+	if (document.getElementById("input_r_r2").checked) {
+		document.getElementById("input_r_r2").checked = false
+	}
+	if (document.getElementById("input_r_r3").checked) {
+		document.getElementById("input_r_r3").checked = false
+	}
+	if (document.getElementById("input_r_b1").checked) {
+		document.getElementById("input_r_b1").checked = false
+	}
+	if (document.getElementById("input_r_b2").checked) {
+		document.getElementById("input_r_b2").checked = false
+	}
+	if (document.getElementById("input_r_b3").checked) {
+		document.getElementById("input_r_b3").checked = false
+	}
+}
 
 
 function getLevel(){
@@ -413,7 +465,24 @@ function validateLevel() {
 function validateData() {
 	var ret = true
 	var errStr = "Bad fields: ";
-	
+	for (rf of requiredFields) {
+		// Robot requires special (radio) validation
+		if (rf == "r") {
+			if (!validateRobot()) {
+				errStr += rf + " "
+				ret = false
+			}
+		} else if (rf == "l") {
+			if (!validateLevel()) {
+				errStr += rf + " "
+				ret = false
+			}
+		// Normal validation (length <> 0)
+		} else if (document.getElementById("input_"+rf).value.length == 0) {
+			errStr += rf + " "
+			ret = false
+		}
+	}
 	if (ret == false) {
 		alert("Enter all required values\n"+errStr);
 	}
@@ -466,6 +535,7 @@ function updateQRHeader() {
 	str = str
 		.replace('!EVENT!', document.getElementById("input_e").value)
 		.replace('!MATCH!', document.getElementById("input_m").value)
+		.replace('!ROBOT!', document.getElementById("display_r").value)
 		.replace('!TEAM!', document.getElementById("input_t").value);
 
 	document.getElementById("display_qr-info").textContent = str;
