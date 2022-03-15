@@ -6,7 +6,7 @@ var authKey = "";
 /**
  * Get list of teams in event
  *
- * @param {eventCode} eventCode the event code (i.e. 2020caln) to pull the team list
+ * @param {2022njfla} eventCode the event code (i.e. 2020njfla) to pull the team list
  */
 function getTeams(eventCode) {
 	if (authKey) {
@@ -28,7 +28,7 @@ function getTeams(eventCode) {
 /**
  * Get schefule for event
  *
- * @param {eventCode} eventCode the event code (i.e. 2020caln) to pull the team list
+ * @param {2022njfla} eventCode the event code (i.e. 2020caln) to pull the team list
  */
 function getSchedule(eventCode) {
 	if (authKey) {
