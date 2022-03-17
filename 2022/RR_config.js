@@ -91,12 +91,12 @@ var config_data = `
         "title": "Lower Cargo Scored",
         "type":"counter"
       },
-        "Upper Cargo Dropped (Cargo bounced out of high hub)": {
+        "Upper Cargo Dropped": {
         "code":"du",
         "title": "Uppoer Cargo Scored",
         "type":"counter"
       },
-      "Lower Cargo Dropped (Cargo bounced out of low hub)": {
+      "Lower Cargo Dropped": {
         "code":"dl",
         "title": "Lower Cargo Scored",
         "type":"counter"
@@ -117,7 +117,7 @@ var config_data = `
         },
         "defaultValue":"x"
       },
-      "Tried to Climb (If they failed to climb, what was the last rung they reached before falling)": {
+      "Tried to Climb": {
         "code":"lsr",
         "title": "last succcessful rung",
         "type":"radio",
