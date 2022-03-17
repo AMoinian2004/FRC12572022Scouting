@@ -125,10 +125,11 @@ function addText(table, idx, name, data) {
   var row = table.insertRow(idx);
   var cell1 = row.insertCell(0);
   cell1.classList.add("title");
+  cell1.setAttribute("style", "rows: 5;");
   if (!data.hasOwnProperty('code')) {
     cell1.innerHTML = `Error: No code specified for ${name}`;
     return idx+1;
-	   cell.setAttribute("style", "rows: 5;");
+	   
   }
   var cell2 = row.insertCell(1);
   cell1.innerHTML = name+'&nbsp;';
