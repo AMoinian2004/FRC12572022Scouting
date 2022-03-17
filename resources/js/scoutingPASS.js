@@ -128,6 +128,7 @@ function addText(table, idx, name, data) {
   if (!data.hasOwnProperty('code')) {
     cell1.innerHTML = `Error: No code specified for ${name}`;
     return idx+1;
+	   cell.setAttribute("style", "rows: 5;");
   }
   var cell2 = row.insertCell(1);
   cell1.innerHTML = name+'&nbsp;';
