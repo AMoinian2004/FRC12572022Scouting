@@ -91,12 +91,12 @@ var config_data = `
         "title": "Lower Cargo Scored",
         "type":"counter"
       },
-        "Upper Cargo Dropped": {
+        "Upper Cargo Missed": {
         "code":"du",
         "title": "Uppoer Cargo Scored",
         "type":"counter"
       },
-      "Lower Cargo Dropped": {
+      "Lower Cargo Missed": {
         "code":"dl",
         "title": "Lower Cargo Scored",
         "type":"counter"
