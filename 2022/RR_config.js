@@ -14,7 +14,7 @@ var config_data = `
       "Event":{
         "code":"e",
         "type":"event",
-        "defaultValue":"Mount Olive",
+        "defaultValue":"Bridgewater",
         "required":"true",
         "disabled":"true"
       },
