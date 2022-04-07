@@ -14,7 +14,7 @@ var config_data = `
       "Event":{
         "code":"e",
         "type":"event",
-        "defaultValue":"Bridgewater",
+        "defaultValue":"DCMP",
         "required":"true",
         "disabled":"true"
       },
