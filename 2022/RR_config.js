@@ -1,7 +1,7 @@
 var config_data = `
 {
   "title":"FRC 1257 Scouting App 2022",
-  "page_title":"FRC 1257 Rapid React Scouting App",
+  "page_title":"FRC 1257 Rapid React Scouting App, By Armin Moinian",
   "elements":{
     "prematch": {
       "Scouter Initials": {
